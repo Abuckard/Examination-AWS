@@ -1,0 +1,272 @@
+body {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color:  #19274A;
+  ;
+  width: 411px;  
+
+
+}
+
+
+.App-container {
+  width: 411px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  .App-title 
+  {
+    color: azure;
+  }
+
+
+
+/*---------CREATE MESSAGE STYLING---------*/
+.create-message-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.create-message-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.username-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.message-input {
+  width: 100%;
+  height: 150px; 
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical; 
+  font-family: Arial, sans-serif;
+}
+
+.post-message-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #EF4343;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/*---------MESSAGE LIST STYLING---------*/
+.message-list-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.search-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+ }
+
+.search-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #EF4343;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.sort-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6243ef;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.message-list-title {
+  font-size: 24px;
+  margin-bottom: 0px;
+
+}
+.message-list-subtitle {
+  font-size: 16px;
+  margin-top: 10px;
+
+}
+
+.message-list {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.message-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+
+
+}
+.message-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+  max-width: 230px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.message-username {
+  font-size: 16px;
+  margin: 0;
+}
+.message-date {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+
+/*---------UPDATE MESSAGE STYLING---------*/
+.update-message-form {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+  .update-textarea {
+    width: 100%;
+    height: 150px; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; 
+    font-family: Arial, sans-serif;
+  }
+  .update-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #EF4343;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  .cancel-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6243ef;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+
+  .back-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #EF4343;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+/* Mobilanpassning med media queries */
+@media (max-width: 768px) {
+
+  .message-list-container {
+    width: 90%; 
+    padding: 10px;
+  }
+
+  .message-list li {
+    padding: 10px;
+    font-size: 14px; 
+  }
+
+  .message-title {
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .message-list-container {
+    width: 100%; 
+    padding: 5px;
+  }
+
+  .message-list li {
+    padding: 8px;
+    font-size: 12px; 
+  }
+
+  .message-title {
+    font-size: 16px; 
+  }
+}
